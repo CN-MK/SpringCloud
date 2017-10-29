@@ -1,0 +1,41 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.mysql.dao.UserDao">
+    <resultMap id="userResultMap" type="com.example.mysql.model.User">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="pwd" property="pwd"/>
+        <result column="sex" property="sex"/>
+        <result column="mobile" property="mobile"/>
+        <result column="email" property="email"/>
+        <result column="avatar" property="avatar"/>
+        <result column="status" property="status"/>
+    </resultMap>
+
+    <select id="selectByName" resultMap="userResultMap" parameterType="java.lang.String">
+        select * from `user` where `name`=#{name}
+    </select>
+
+    <select id="verify" resultType="int" parameterType="com.example.mysql.model.User">
+        select count(*) from `user` where name=#{name} and pwd=#{pwd}
+    </select>
+
+    <select id="select" resultMap="userResultMap" >
+        select * from `user`
+    </select>
+
+    <insert id="insert" parameterType="com.example.mysql.model.User">
+        INSERT into `user` (`name`,pwd,sex,mobile,email,avatar,status) values (#{name},#{pwd},#{sex},#{mobile},#{email},#{avatar},#{status})
+    </insert>
+
+    <update id="update" parameterType="com.example.mysql.model.User">
+        update `user` set name=#{name},pwd=#{pwd},sex=#{sex},mobile=#{mobile},email=#{email},avatar=#{avatar},status=#{status} where id=#{id}
+    </update>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        DELETE from `user` where id=#{id}
+    </delete>
+
+</mapper>
