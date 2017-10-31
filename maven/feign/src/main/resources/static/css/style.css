@@ -1,8 +1,8 @@
 
-/* reset */
+/* start editing from here */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
-ol,ul{list-style:none;margin:0px;padding:0px;}
+ol,ul{list-style:none;margin:0;padding:0;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -18,315 +18,306 @@ a{text-decoration:none;}
 .pos-absolute{position:absolute;}/* Position Absolute */
 .vertical-base{	vertical-align:baseline;}/* vertical align baseline */
 .vertical-top{	vertical-align:top;}/* vertical align top */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
 nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
-/****-----start-body----****/
+/*--login start here--*/
 body{
-	background:url(../images/bg.jpg)  no-repeat center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
- 	background-size: cover;
- 	background-position: center;
- 	background-size: 100% 100%;
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   background: url(../images/banner.jpg)repeat;
+   padding:100px 0px 30px 0px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 100%;
 }
-.main{
-	margin:7em auto 0;
-	width:44%;
+.login {
+  width: 32%;
+  margin: 0 auto;
 }
-.inset {
-	text-align: center;
-	width: 100%;
+.login h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+  font-family: 'Droid Serif', serif;
 }
-.main h2,.main h3{
-	font-size: 1em;
-	text-align: center;
-	color:#fff;
-	padding:1em 0;
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.login-top {
+  background: #E1E1E1;
+  border-radius: 25px 25px 0px 0px;
+  -webkit-border-radius:  25px 25px 0px 0px;
+  -moz-border-radius: 25px 25px 0px 0px;
+  -o-border-radius: 25px 25px 0px 0px;
+  padding: 40px 60px;
 }
-.main h3{
-	font-size: 1em;
-	text-align:left;
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.login-top h1 {
+  text-align: center;
+  font-size: 27px;
+  font-weight: 500;
+  color: #F45B4B;
+  margin: 0px 0px 20px 0px;
 }
-.main h3 span a{
-	color:#1888A8;
-	font-weight: bold;
-}
-.span {
-	float:left;
-	display: block;
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background:#3B5998;
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-ms-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	border:1px solid #3B5998;
-	outline:none;
-	width: 49.99%;
-}
-.span img {
-	padding:11px 12px;
-	float: left;
-	
-}
-.span:hover{
-	background:#5D7BBA;
-	color:#fff;
-}
-.span i {
-	color: #fff;
-	padding: 14px 14px;
-	float: left;
-	font-size: 18px;
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.span1 {
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	float:right;
-	transition: all 0.5s ease-out;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	background: #55ACEE;
-	outline:none;
-	width: 49.7%;
-}
-.span1 img {
-	padding: 12px 24px;
-	float:left;
-}
-.span1 i {
-	color: #fff;
-	padding: 15px 14px;
-	float: left;
-	font-size: 18px;
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.span1:hover{
-	background:#71B8ED;
-	color:#fff;
-}
-.lable input[type="text"] {
-	padding: 15px;
-	width: 44%;
-	font-size: 1.1em;
-	margin: 18px 0px;
-	color: #666666;
-	float: left;
-	cursor: pointer;
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.login-top input[type="text"] {
 	outline: none;
-	font-weight: 600;
-	margin-left: 3px;
-	background: #FFFFFF;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	border-left: 6px solid #fff;
-	border-bottom: none;
-	border-right: none;
-	border-top: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #818181;
+  padding: 15px 20px;
+  background: #CACACA;
+  border: 1px solid #ccc;
+  border-radius:25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -o-border-radius: 25px;
+  margin: 0px 0px 12px 0px;
+  width: 88%;
+  -webkit-appearance: none;
 }
-.lable input[type="text"]:hover,.lable-2 input[type="text"]:hover,input[type="Password"]:hover,#active {
-	color:#DCDCDC;
-	border-left:6px solid#40A46F;
-}
-.lable-2 input[type="text"],input[type="Password"] { 
-	padding: 14px;
-	width: 94%;
-	font-size: 1em;
-	margin: 18px 0px;
-	border:none;
-	color: #666666;
-	cursor: pointer;
-	background: none;
-	float: left;
+.login-top input[type="password"]{
 	outline: none;
-	font-weight: 700;
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background: #ffffff;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	border-left: 6px solid #fff;
-	border-bottom: none;
-	border-right: none;
-	border-top: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #818181;
+  padding: 15px 20px;
+  background: #CACACA;
+  border: 1px solid #ccc;
+  border-radius:25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -o-border-radius: 25px;
+  margin: 0px 0px 12px 0px;
+  width: 88%;
+  -webkit-appearance: none;
 }
-
-.submit{
-	padding:5px 4px;
-	text-align: center;
+.forgot  a{
+  font-size: 13px;
+  font-weight: 500;
+  color: #F45B4B;
+  display: inline-block;
+  border-right: 2px solid #F45B4B;
+  padding: 0px 7px 0px 0px;
 }
-input[type=submit] {
-	padding: 17px 30px;
+.forgot  a:hover{
+  color: #818181;
+}
+.forgot input[type="submit"] {
+  background: #F45B4B;
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 8px 7px;
+  width: 20%;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6px;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin: 0px 7px 0px 3px;
+  outline: none;
+  border: none;
+}
+.forgot input[type="submit"]:hover {
+	background:#818181;
+	transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.forgot {
+  text-align: right;
+}
+.login-bottom {
+  background: #E15748;
+  padding: 30px 65px;
+  border-radius: 0px 0px 25px 25px;
+  -webkit-border-radius:  0px 0px 25px 25px;
+  -moz-border-radius: 0px 0px 25px 25px;
+  -o-border-radius: 0px 0px 25px 25px;
+  text-align: right;
+  border-top: 2px solid #AD4337;
+}
+.login-bottom h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+.login-bottom h3 a {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+.login-bottom h3 a:hover {
+	color:#696969;
+	transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.copyright {
+  padding: 150px 0px 0px 0px;
+  text-align: center;
+}
+.copyright p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+.copyright p a{
+  font-size: 15px;
+  font-weight: 400;
+  color: #E15748;
+}
+.copyright p a:hover{
 	color: #fff;
-	float: right;
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background: #40A46F;
-	border: 1px solid #40A46F;
-	cursor: pointer;
-	font-size: 18px;
-	transition: all 0.5s ease-out;
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-ms-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	outline:none;
-	width: 100%;
+	 transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
 }
-
-.submit input[type=submit]:hover {
-	 background:#07793D;
-	 border:1px solid #07793D;
+/*--login end here--*/
+/*--meadia quiries start here--*/
+@media(max-width:1440px){
+.login {
+  width: 35%;
 }
-/**start-copy-right**/
-.copy-right {
-	text-align: center;
-	margin: 2em 0;
 }
-.copy-right p {
-	color: #FFF;
-	font-size:1em;
+@media(max-width:1366px){
+.login {
+  width: 37%;
 }
-.copy-right p a {
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:1em;
-	font-weight:600;
-	color:#55ACEE;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
 }
-.copy-right a:hover{
-	color:#fff;
+@media(max-width:1280px){
+.login {
+  width: 40%;
 }
-/*----start-responsive design-----*/
-@media (max-width:1440px){
-	.main {
-		width:46%;
-		margin: 7em auto 0;
-	}
 }
-
-@media (max-width:1366px){
-	.main{
-		width: 48%;
-	}
-	.span1 {
-		width: 49.69%;
-	}
+@media(max-width:1024px){
+.login {
+  width: 48%;
 }
-@media (max-width:1280px){
-	.main{
-		width:53%;
-	}
-	
+.copyright {
+  padding: 100px 0px 0px 0px;
 }
-@media (max-width:1024px){
-	.main{
-		width: 66%;
-		margin: 9em auto 0;
-	}
-	
-
 }
-@media (max-width:768px){
-	.main {
-	width:91%;
-	margin: 6em auto 0;
-	}
+@media(max-width:768px){
+.login {
+  width: 65%;
 }
-
-@media (max-width:640px){
-	.main{
-		width:90%;
-		margin: 6em auto 0;
-	}
-	.span,.span1 {
-		margin:0 auto;
-		text-align:center;
-		width: 100%;
-		margin-bottom: 15px;
-	}
-	.main h2, .main h3 {
-		padding: 0.5em 0;
-		font-size: 1em;
-	}
-	.lable input[type="text"]:first-child {
-	width: 92%;
-	}
-	.lable input[type="text"],.lable input[type="text"] {
-		width:92%;
-		font-size: 1em;
-		text-align: left;
-		margin: 10px 0px;
-		margin-left:0;
-	}
-	.lable-2 input[type="text"], .lable-2 input[type="text"],input[type="Password"] { 
-		width: 92.3%;
-		font-size: 1em;
-		margin: 10px 0px;
-		text-align: left;
-	}
-	input[type=submit] {
-		padding: 15px 15px;
-		font-size: 1em;
-		color: #fff;
-		text-align:center;
-		width: 100%;
-	}
-	.main h3 {
-		text-align: center;
-	}
+.login-top h1 {
+  font-size: 25px;
 }
-@media (max-width:480px){
-	.main{
-		width:90%;
-		margin: 6em auto 0;
-	}
-	.lable input[type="text"],.lable input[type="text"] {
-		width:92%;
-	
+.login-bottom h3 a {
+  font-size: 22px;
 }
-@media (max-width:320px){
-	.main {
-		width: 90%;
-		margin: 3em auto 0;
-	}
-	.span i {
-		font-size: 16px;
-	}
-	.span1 i {
-		padding: 15px 0px;
-		font-size: 16px;
-	}
-	.lable input[type="text"]:first-child {
-		width: 90%;
-		padding: 13px 10px;
-	}
-	.lable input[type="text"], .lable input[type="text"],.lable-2 input[type="text"], .lable-2 input[type="text"] { 
-		width: 90%;
-		font-size: 16px;
-		padding:13px 10px;
-	}
-	input[type="Password"] {
-		font-size: 16px;
-		padding:13px 10px;
-		width: 90%;
-	}
-	.main h3 {
-	line-height: 28px;
-	}
-)
+.copyright {
+  padding: 250px 0px 0px 0px;
+}
+body {
+  padding: 100px 0px 0px 0px;
+}
+.login h2 {
+  font-size: 28px;
+}
+}
+@media(max-width:640px){
+.login-top h1 {
+  font-size: 23px;
+}
+.forgot input[type="submit"] {
+  font-size: 15px;
+  width: 22%;
+}
+.login-top input[type="text"] {
+  padding: 12px 20px;
+}
+.login-top input[type="password"] {
+  padding: 12px 20px;
+}
+.login-bottom h3 a {
+  font-size: 19px;
+}
+.login-bottom h3 {
+  font-size: 13px;
+}
+.copyright {
+  padding: 110px 0px 0px 0px;
+}
+body {
+  padding: 110px 0px 0px 0px;
+}
+}
+@media(max-width:480px){
+.login {
+  width: 80%;
+}
+.login-top h1 {
+  font-size: 21px;
+}
+.login-top input[type="text"] {
+  width: 85%;
+}
+.login-top {
+  padding: 30px 40px;
+}
+.login-top input[type="password"] {
+  width: 85%;
+}
+.login h2 {
+  font-size: 25px;
+}
+}
+@media(max-width:320px){
+.login {
+  width: 90%;
+}
+.login-top {
+  padding: 20px 25px;
+}
+.login-top input[type="text"] {
+  width: 81%;
+  padding: 10px 20px;
+  font-size: 13px;
+  margin: 0px 0px 7px 0px;
+}
+.login-top input[type="password"] {
+  width: 81%;
+  padding: 10px 20px;
+  font-size: 13px;
+  margin: 0px 0px 7px 0px;
+}
+.forgot input[type="submit"] {
+  font-size: 11px;
+  width: 25%;
+  padding: 6px 7px;
+}
+.forgot  a {
+  font-size: 11px;
+}
+.login-bottom {
+  padding: 20px 25px;
+}
+.login-bottom h3 {
+  font-size: 11px;
+}
+.login-bottom h3 a {
+  font-size: 17px;
+}
+body {
+  padding: 50px 0px 0px 0px;
+}
+.copyright p {
+  font-size: 13px;
+}
+.copyright p a{
+  font-size: 13px;
+}
+.login h2 {
+  font-size: 23px;
+  margin:0px 0px 35px 0px;
+}
+.copyright {
+  padding: 75px 0px 0px 0px;
+}
+}
+/*--meadia quiries end here--*/

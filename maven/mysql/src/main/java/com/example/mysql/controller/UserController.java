@@ -16,8 +16,8 @@ public class UserController {
 
 
     @RequestMapping("/all")
-    public List<User> select(){
-        //处理“/user/的get请求，获取用户列表
+    public List select(){
+        //处理get请求，获取用户列表
         return userDao.select();
     }
 
@@ -46,10 +46,10 @@ public class UserController {
 
 
     @RequestMapping("/verify")
-    public Integer verify(HttpServletRequest request){
-        User user=new User();
-        user.setName(request.getParameter("name"));
-        user.setPwd(request.getParameter("pwd"));
-        return(userDao.verify(user));
+    public User verify(User user, HttpServletRequest request){
+        user.setName(request.getParameter("UserId"));
+        user.setPwd(request.getParameter("password"));
+            return userDao.verify(user);
     }
+
 }

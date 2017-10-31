@@ -18,8 +18,8 @@
         select * from `user` where `name`=#{name}
     </select>
 
-    <select id="verify" resultType="int" parameterType="com.example.mysql.model.User">
-        select count(*) from `user` where name=#{name} and pwd=#{pwd}
+    <select id="verify" resultMap="userResultMap" parameterType="com.example.mysql.model.User">
+        select * from `user` where name=#{name} and pwd=#{pwd}
     </select>
 
     <select id="select" resultMap="userResultMap" >

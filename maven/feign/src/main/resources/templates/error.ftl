@@ -7,6 +7,6 @@
 <body>
     <p>error page</p>
     <p>you make a mistake</p>
-        ${user}
+
 </body>
 </html>

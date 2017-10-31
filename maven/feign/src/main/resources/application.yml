@@ -2,6 +2,8 @@ eureka:
   client:
     service-url:
      defaultZone: http://localhost:8080/eureka/
+  instance:
+    status-page-url: http://localhost:${server.port}/start
 server:
   port: 8086
 spring:

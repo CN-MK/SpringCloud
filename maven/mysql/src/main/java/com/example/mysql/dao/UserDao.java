@@ -11,6 +11,6 @@ public interface UserDao {
     int insert(User user);
     void update(User user);
     void delete(Long id);
-    int verify(User user);
-    List<User> select();
+    User verify(User user);
+    List select();
 }
